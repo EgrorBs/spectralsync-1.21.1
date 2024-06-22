@@ -1,0 +1,22 @@
+{
+  "name": "The Syncbook",
+  "icon": "spectral-sync:syncbook",
+  "advancement": "spectrum:craft_onyx_pedestal",
+  "category": "spectrum:magical_items_category",
+  "extra_recipe_mappings": {
+    "spectral-sync:syncbook": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "The Syncbook",
+      "recipe": "spectral-sync:pedestal/tier2/syncbook",
+      "text": "The Syncbook is a item that allows you to share your spectrum progress with others.$(br)Use it to fill it with knowledge."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "But how do I use this",
+      "text": "The Syncbook will $(item)glow$() when it is holding spectrum progress. simply right-click to get the progress.$(br)Or if you want to overwrite the progress in the book you can $(item)Sneak and use$() to put your progress in the book"
+    }
+  ]
+}
