@@ -55,19 +55,10 @@ dependencies {
 
 	//spectrum
 	modImplementation "maven.modrinth:3rc31Hgo:W5hqOrTM"
-	modImplementation ("maven.modrinth:Revelationary:${project.revelationary_version}")
-	modImplementation include("maven.modrinth:AdditionalEntityAttributes:${project.additional_entity_attributes_version}")
-	modImplementation include("com.github.DaFuqs:Arrowhead:${project.arrowhead_version}")
-	modImplementation include("com.github.DaFuqs:DimensionalReverb:${project.dimensional_reverb_version}")
-	modImplementation include("maven.modrinth:fractal-lib:${project.fractal_version}")
-	modImplementation include("com.github.Noaaan:Matchbooks:${project.matchbooks_version}")
 	modImplementation "vazkii.patchouli:Patchouli:${patchouli_version}-FABRIC"
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${clothconfig_version}") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
-	modImplementation "dev.emi:trinkets:${trinkets_version}"
-	modImplementation include("com.github.emilyploszaj:step-height-entity-attribute:${project.step_height_attribute_version}")
-	modImplementation include("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
 	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
 	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
 	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${project.cca_version}")
@@ -88,7 +79,7 @@ tasks.withType(JavaCompile).configureEach {
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
 	kotlinOptions {
-		jvmTarget = 17
+		jvmTarget = 17 // "17"?
 	}
 }
 
